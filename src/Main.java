@@ -28,7 +28,9 @@ public class Main {
                 case 4:
                     checkEven();
                     break;
-
+                case 5:
+                    reverse();
+                    break;
                 case 6:
                     System.exit(0);
             }
@@ -107,5 +109,22 @@ public class Main {
             System.out.println("It is a odd number");
         }
     }
+
+ //reverse of a number
+     static void reverse(){
+         System.out.println("Enter a number ");
+         Scanner sc = new Scanner(System.in);
+         int number =sc.nextInt();
+         int reverse = 0;
+         while(number != 0)
+         {
+             int remainder = number % 10;
+             reverse = reverse * 10 + remainder;
+             number = number/10;
+         }
+         System.out.println("The reverse of the given number is: " + reverse);
+     }
 }
+
+
 
