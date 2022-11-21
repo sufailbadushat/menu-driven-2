@@ -38,6 +38,8 @@ public class Main {
         }
 
     }
+
+
     static void largest(){
         Scanner scan = new Scanner(System.in);
         System.out.println("Enter 3 numbers:");
@@ -58,5 +60,18 @@ public class Main {
         }
     }
 
+
+    static void smallest(){
+        Scanner scan2 = new Scanner(System.in);
+        System.out.println("Enter 3 numbers:");
+        double a=scan2.nextDouble();
+        double b=scan2.nextDouble();
+        double c=scan2.nextDouble();
+        double temp=a<b?a:b;
+//comparing the temp variable with c and storing the result in the variable names smallest
+        double smallest=c<temp?c:temp;
+//prints the smallest number
+        System.out.println("The smallest number is: "+smallest);
+    }
 }
 
