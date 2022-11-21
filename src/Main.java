@@ -28,9 +28,7 @@ public class Main {
                 case 4:
                     checkEven();
                     break;
-                case 5:
-                    reverse();
-                    break;
+
                 case 6:
                     System.exit(0);
             }
@@ -96,5 +94,18 @@ public class Main {
                 System.out.println(num + " is not a prime number.");
         }
 
+
+//even or not
+    static void checkEven(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a number: ");
+        int num = sc.nextInt();
+        if(num%2==0){
+            System.out.println("It is a even number");
+        }
+        else {
+            System.out.println("It is a odd number");
+        }
+    }
 }
 
